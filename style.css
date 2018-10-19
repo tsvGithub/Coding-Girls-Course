@@ -29,10 +29,6 @@
     font-family: 'Open Sans';
     font-weight: 100;
 }
-*{
-    margin: 0;
-    padding: 0;
-}
 /*Header styles*/
 .background-image{
     background-image: url('images/background.jpg');
@@ -197,6 +193,7 @@
     letter-spacing: 1px;
     color: #fd634e;
     font-family: Montserrat, sans-serif;
+    margin-bottom: 15px;
 }
 .content-subtitle{
     font-size: 14px;
