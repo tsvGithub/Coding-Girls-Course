@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Fitness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
     <link rel="stylesheet" href="eric-meyer-reset.min_.css">
     <link rel="stylesheet" href="normalize.css">
@@ -13,7 +14,6 @@
     <header class="background-image">
         <div class="header">
         <img src="images/logo.png" alt="Logo Fitness">
-        <nav>
             <ul class="menu">
                 <li class="menu-item"><a href="#" class="menu-link">About</a></li>
                 <li class="menu-item"><a href="#" class="menu-link">How it works</a></li>
@@ -21,39 +21,43 @@
                 <li class="menu-item"><a href="#" class="menu-link">Faq</a></li>
                 <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
             </ul>
-        </nav>
         </div>
-        <h1 class="title">Fitness in a can<span class="menu-yellowgreen">&sol;</span></h1>
-        <h2 class="subtitle">Yes you can<span class="menu-red">&sol;</span></h2>
+        <div class="header-slogan">
+            <h1 class="header-slogan-title">Fitness in a can<span class="header-slogan-title-yellowgreen">&sol;</span></h1>
+            <h2 class="header-slogan-subtitle">Yes you can<span class="header-slogan-subtitle-red">&sol;</span></h2>
+        </div>
+    
     </header> <!--end of header-->
 <!--main page-->
     <main class="main-page">
-        <ul class="nav">
-            <li class="nav-item">
-                <img src="images/icon1.svg" alt="">
+        <ul class="benefits">
+            <li class="benefits-item">
+                <div class="benefits-item-wrapper"><img class="benefits-item-icon" src="images/icon1.svg" alt=""></div>
                 <h2>Resources</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis a ante a bibendum. Phasellus molestie tortor velit, sit amet interdum augue rhoncus ut.</p>
-                <a href="" class="nav-link">Explore more<img src="images/white-right-arrow.png" height="11" alt="arrow" class="arrow"></a>
+                <p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable clients groups. Easily manage your inspiration</p>
+                <a href="" class="benefits-link">Explore more<img src="images/white-right-arrow.png" height="11" alt="arrow" class="arrow"></a>
             </li>
-            <li class="nav-item">
-                <img src="images/icon2.svg" alt="">
+            <li class="benefits-item">
+                <div class="benefits-item-wrapper"><img class="benefits-item-icon" src="images/icon2.svg" alt=""></div>
                 <h2>Training & Funding</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis a ante a bibendum. Phasellus molestie tortor velit, sit amet interdum augue rhoncus ut. Vivamus venenatis arcu eget nunc commodo mollis.</p>
-                <a href="" class="nav-link">Browse training<img src="images/white-right-arrow.png" height="11" alt="arrow" class="arrow"></a>
+                <p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable clients groups.</p>
+                <div><a href="" class="benefits-link">Browse training<img src="images/white-right-arrow.png" height="11" alt="arrow" class="arrow"></a>
+                </div>
+                </li>            
+            <li class="benefits-item">
+                <div class="benefits-item-wrapper"><img class="benefits-item-icon" src="images/icon3.svg" alt=""></div>
+                <h2>Connect</h2>
+                <p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable clients groups. Easily manage your inspiration </p>
+                <a href="" class="benefits-link">Connect now<img src="images/white-right-arrow.png" height="11" alt="arrow" class="arrow"></a>
             </li>            
-            <li class="nav-item">
-                <img src="images/icon3.svg" alt="">
-                <h2 id="one">Connect</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis a ante a bibendum. Phasellus molestie tortor velit.</p>
-                <a href="" class="nav-link">Connect now<img src="images/white-right-arrow.png" height="11" alt="arrow" class="arrow"></a>
-            </li>            
-             <li class="nav-item">
-                <img src="images/icon4.svg" alt="">
+             <li class="benefits-item">
+                <div class="benefits-item-wrapper"><img class="benefits-item-icon" src="images/icon4.svg" alt=""></div>
                 <h2>Communicate</h2>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis a ante a bibendum. Phasellus molestie tortor velit, sit amet interdum augue rhoncus ut.
-                </p>
-                <a href="" class="nav-link">Start now<img src="images/white-right-arrow.png" height="11" alt="arrow" class="arrow"></a>
+                <p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable clients groups.Easily</p>
+                <div>
+
+                <a href="" class="benefits-link">Start now<img src="images/white-right-arrow.png" height="11" alt="arrow" class="arrow"></a>
+            </div>
             </li>
         </ul>
 <!--main-blog-->
@@ -96,33 +100,21 @@
 <!--end of main page-->
 <!--footer-->
     <footer>
-        <form action="">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <button>Join Newsletter</button>
+        <!--form-->
+        <form class="forms" action="">
+            <input class="input name" type="text" placeholder="Your Name">
+            <input class="input email" type="email" placeholder="Your Email">
+            <button class="button">Join Newsletter <img class="rounded-arrow" src="images/yellowgreen-right-arrow.png" alt="arrow"> </button>
         </form>
-        <ul>
-            <li>
-                <a href="">
-                    <img src="images/fb.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/tw.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/yt.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="images/ln.png" alt="">
-                </a>
-            </li>
+        <!--end of form-->
+        <!--social-->
+        <ul class="social">
+            <li class="social-item fb"><a href="" class="social-link fb"><img src="images/fb.png" alt="&#6220;"></a></li>
+            <li class="social-item tw"><a href="" class="social-link tw"><img src="images/tw.png" alt="&#62217;"></a></li>
+            <li class="social-item yt"><a href="" class="social-link yt"><img src="images/yt.png" alt=""></a></li>
+            <li class="social-item ln"><a href="" class="social-link ln"><img src="images/ln.png" alt="&#62232;"></a></li>
         </ul>
+        <!--end of social-->
     </footer> 
     <!--end of footer-->
 </body>
