@@ -33,6 +33,7 @@ body{
     overflow-x: hidden;
 }
 /*Header styles*/
+
 .background-image{
     background-image: url('images/background.jpg');
     height: 890px;
@@ -91,9 +92,11 @@ body{
 .header-slogan-title-yellowgreen{
     color: #a2ca28;
 }
+
 /*End of header styles*/
 
 /*Main page styles*/
+
 .main-page{
     background-color: #a2ca28;
 }
@@ -151,7 +154,6 @@ body{
     padding-left: 10px;
 }
 /*end of main page styles*/
-
 /*main-blog*/
 .wrapper{
     width: 90%;
@@ -241,7 +243,6 @@ body{
     text-align: center;
 }
 /*end of main-blog styles*/
-
 /*footer style*/
 footer{
     background: #000;
@@ -345,3 +346,4 @@ footer{
 }
 /*end of social style*/
 /*end of footer style*/
+
