@@ -1,15 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
+@font-face{
+    src: url('./fonts/AvenirNextCyr-Regular.ttf');
+    font-family: AvenirNext;
+}
+@font-face{
+    src: url('./fonts/Myriad Pro Regular.ttf');
+    font-family: 'Myriad Pro';
+}
+@font-face{
+    src: url('./fonts/ProximaNova-Reg.otf');
+    font-family: ProximaNova;
+}
+@font-face{
+    src: url('./fonts/Montserrat-Regular.ttf');
+    font-family: Montserrat;
+}
+@font-face{
+    src: url('./fonts/OpenSans-Regular.ttf');
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+@font-face{
+    src: url('./fonts/OpenSans-Bold.ttf');
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+@font-face{
+    src: url('./fonts/OpenSans-Light.ttf');
+    font-family: 'Open Sans';
+    font-weight: 100;
+}
+body{
+    overflow-x: hidden;
 }
 /*Header styles*/
 
 .background-image{
     background-image: url('images/background.jpg');
-    height: 900px;
+    height: 890px;
     background-repeat: no-repeat;
-    /* background-size: contain; */
-    background-size: cover;
+    background-size: auto 100%;
+    background-color: #a2ca28;
 }
 .header{
     display: flex;
@@ -21,27 +51,46 @@
     width: 500px;
     list-style: none;
     justify-content: space-between;
+    font-family: AvenirNext, sans-serif;
 }
 .menu-item{
     color: #fff;
-    font-style: 13px;
+    font-size: 13px;
     text-transform: uppercase;
+    font-family: 'Myriad Pro';
 }
 .menu-link{
     color: #fff;
     text-decoration: none;
 }
-.title{
+.header-slogan{
+    margin: 600px 0 140px 120px;
+    display: block;
+    width: 400px;
+}
+.header-slogan-title{
     font-size: 40px;
     text-transform: uppercase;
     color: #fff;
-    margin: 500px 0 0 30px;
+    font-family: AvenirNext, sans-serif;
+    padding: 0;
+    margin: 0;
 }
-.subtitle{
+.header-slogan-subtitle{
     color: #fff;
     font-size: 15px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin: 5px 0 0 30px;
+    font-family: 'Open Sans', serif;
+    font-weight: 700;
+    text-align: right;
+    padding: 15px 100px 0 0;
+}
+.header-slogan-subtitle-red{
+    color: #fd634e;
+}
+.header-slogan-title-yellowgreen{
+    color: #a2ca28;
 }
 
 /*End of header styles*/
@@ -51,66 +100,123 @@
 .main-page{
     background-color: #a2ca28;
 }
-.nav{
+.benefits{
     list-style: none;
     width: 85%;
+    height: 260px;
     display: flex;
     justify-content: space-between;
-    padding: 100px;
+    padding: 115px 0 115px 0;
     color: #fff;
-    margin: 0;
+    margin: 0 auto;
 }
-.nav-item{
+.benefits-item{
     width: 25%;
-    padding-right: 30px;
+    padding-right: 23px;
     font-size: 14px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.nav-item h2{
+.benefits-item:last-child{
+    padding-right: 0;
+}
+.benefits-item-wrapper{
+    height: 65px;
+}
+.benefits-item-icon{
+    display: block;
+    padding-left: 0;
+    justify-content: left;
+}
+.benefits-item h2{
     font-size: 24px;
     font-weight: normal;
-}
-.nav-item p{
-    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
     padding-bottom: 30px;
 }
-.nav-link{
+.benefits-item p{
+    line-height: 1.6rem;
+    font-size: 14px;
+    padding-bottom: 30px;
+    font-family: ProximaNova, serif;   
+}
+.benefits-link{
     color: #fff;
+    font-family: ProximaNova, serif;
     text-decoration: none;
     padding-top: 20px;
     position: absolute;
     bottom: 0;
+    font-size: 14px;
 }
 .arrow{
     padding-left: 10px;
 }
-#one{
-    padding-top: 10px;
-}
-
 /*end of main page styles*/
-
+/*main-blog*/
 .wrapper{
-    width: 85%;
+    width: 90%;
     margin: auto;
     display: flex;
 }
 .content{
-    width: 40%;
-    min-height: 394px;
+    height: 394px;
     background: white;
     text-align: center;
     padding: 30px 50px;
     box-sizing: border-box;
 }
 .content .icon{
-    max-height: 30px;
+    height: 23px;
+    margin-bottom: 15px;
 }
 .wrapper .img{
-    width: 60%;
-    min-height: 394px;
+    width: 794px;
+    height: 394px;
+}
+.hover{
+    position: relative;
+}
+.hover::before{
+    content: '';
+    display: block;
+    background: rgba(4, 4, 4, 50%);
+    width: 794px;
+    height: 394px;
+    position: absolute;
+}
+.text-hover{
+    position: absolute;
+    top: 150px;
+    left: 270px;
+    text-align: center;
+}
+.text-hover h2{
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a2ca28;
+    font-family: "Open Sans";
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.content-title{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #a2ca28;
+    font-family: "Open Sans";
+    height: 58px;
+    font-weight: 300;
+}
+.text-hover h3{
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fd634e;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 15px;
 }
 .content-subtitle{
     font-size: 14px;
@@ -118,21 +224,12 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #fd634e;
-    font-family: "Montserrat";
+    font-family: Montserrat, sans-serif;
     text-align: center;
     margin-bottom: 5px;
 }
-.content-title{
-    margin-top: 0;
-    font-size: 35px;
-    text-transform: uppercase;
-    color: #a2ca28;
-    font-family: "Open Sans";
-    font-weight: 200;
-    text-align: center;
-    margin-bottom: 20px;
-}
 .content-content{
+    height: 124px;
     font-size: 14px;
     line-height: 26px;
     color: #656e74;
@@ -145,7 +242,108 @@
     font-family: "Open Sans";
     text-align: center;
 }
-
 /*end of main-blog styles*/
-
+/*footer style*/
+footer{
+    background: #000;
+    justify-content: space-between;
+}
+.footer-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+    /*form style*/
+.forms{
+    display: flex;
+    padding: 70px;
+}
+.input{
+    border: none;
+    border-radius: 2px;
+    background-color: #fff;
+    font-size: 14px;
+    padding-left: 25px;
+    line-height: 49px;
+    color: #83969f; 
+    font-family: "Proxima Nova";
+    width: 201px;
+    height: 49px;
+    margin-left: 5px;
+}
+.email{
+    width: 340px;
+}
+.button{
+    background: #a2ca28;
+    width: 182px;
+    height: 49px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Proxima Nova";
+    margin-left: 5px;
+}
+.rounded-arrow{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+}
+/*End of form style*/
+/*social style*/
+.social{
+    display: flex;
+    width: 240px;
+    list-style: none;
+    justify-content: space-between;
+    font-family: AvenirNext, sans-serif;
+    padding: 70px 60px;
+}
+.social-item{
+    width: 51px;
+    height: 51px;
+    border-radius: 26px;
+    margin: 0 5px;
+}
+.social-item.fb{
+    background-color: #2e3092;
+    position: relative;
+}
+.social-item.tw{
+    background-color: #00adef;
+    position: relative;
+}
+.social-item.yt{
+    background-color: #ed3123;
+    position: relative;
+}
+.social-item.ln{
+    background-color: #16198f;
+    position: relative;
+}
+.social-link.fb{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+}
+.social-link.tw{
+    position: absolute;
+    top: 17.5px;
+    left: 16px;
+}
+.social-link.yt{
+    position: absolute;
+    top: 17.5px;
+    left: 15px;
+}
+.social-link.ln{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+/*end of social style*/
+/*end of footer style*/
 
