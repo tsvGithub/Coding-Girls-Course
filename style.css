@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
-/*Header*/
+/*Header styles*/
+
 .background-image{
     background-image: url('images/background.jpg');
     height: 900px;
@@ -43,7 +44,10 @@
     margin: 5px 0 0 30px;
 }
 
-/*Main page*/
+/*End of header styles*/
+
+/*Main page styles*/
+
 .main-page{
     background-color: #a2ca28;
 }
@@ -86,7 +90,8 @@
     padding-top: 10px;
 }
 
-/*main-blog*/
+/*end of main page styles*/
+
 .wrapper{
     width: 85%;
     margin: auto;
@@ -140,3 +145,7 @@
     font-family: "Open Sans";
     text-align: center;
 }
+
+/*end of main-blog styles*/
+
+
