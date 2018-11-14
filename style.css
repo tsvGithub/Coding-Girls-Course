@@ -3,6 +3,7 @@
     padding: 0;
 }
 /*Header styles*/
+
 .background-image{
     background-image: url('images/background.jpg');
     height: 900px;
@@ -42,9 +43,11 @@
     text-transform: uppercase;
     margin: 5px 0 0 30px;
 }
+
 /*End of header styles*/
 
 /*Main page styles*/
+
 .main-page{
     background-color: #a2ca28;
 }
@@ -86,8 +89,9 @@
 #one{
     padding-top: 10px;
 }
+
 /*end of main page styles*/
-/*main-blog*/
+
 .wrapper{
     width: 85%;
     margin: auto;
@@ -141,5 +145,7 @@
     font-family: "Open Sans";
     text-align: center;
 }
+
 /*end of main-blog styles*/
+
 
