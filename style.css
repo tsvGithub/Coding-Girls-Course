@@ -186,9 +186,10 @@ body{
 }
 .text-hover{
     position: absolute;
-    top: 150px;
-    left: 270px;
     text-align: center;
+    width: 100%;
+    top: 50%;
+    margin-top: -40px;
 }
 .text-hover h2{
     font-size: 35px;
