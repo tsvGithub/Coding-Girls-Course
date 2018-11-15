@@ -155,6 +155,7 @@ body{
 /*main-blog*/
 .wrapper{
     width: 90%;
+    height: 394px;
     margin: auto;
     display: flex;
 }
@@ -300,7 +301,7 @@ footer{
     list-style: none;
     justify-content: space-between;
     font-family: AvenirNext, sans-serif;
-    padding: 70px 60px;
+    padding: 70px 20px;
 }
 .social-item{
     width: 51px;
