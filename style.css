@@ -201,6 +201,9 @@ body{
     height: 23px;
     margin-bottom: 14px;
 }
+.wrapper .icon:hover{
+    background: #a2ca28;
+}
 .wrapper .img{
     width: 781px;
     height: 394px;
@@ -210,19 +213,28 @@ body{
 }
 .hover::before{
     content: '';
-    display: block;
+    /* display: block; */
+    opacity: 0;
     background: rgba(4, 4, 4, 50%);
     width: 781px;
     height: 394px;
     position: absolute;
+    transition: all 2s;
+}
+.hover:hover::before{
+    opacity: 1;
 }
 .text-hover{
     position: absolute;
     text-align: center;
     width: 100%;
     top: 50%;
-    /*element hight approx.= 79px :2=40px*/
     margin-top: -47px;
+    opacity: 0;
+    transition: all 2s;
+}
+.hover:hover .text-hover{
+    opacity: 1;
 }
 .text-hover h2{
     font-size: 35px;
@@ -330,6 +342,7 @@ footer{
     font-family: "Proxima Nova";
     margin-left: 5px;
     padding: 0 0 0 3px;
+    /* animation: clickMe 4s infinite; */
 }
 .rounded-arrow{
     width: 10px;
@@ -338,11 +351,20 @@ footer{
     background: #fff;
     margin-left: 10px;
 }
+.button:hover{
+    animation: clickMe 4s infinite;
+}
+@keyframes clickMe{
+    0%{background: #a2ca28;}
+    50%{background: yellow;}
+    75%{background: orange;}
+    100%{background: #a2ca28;}
+}
 /*End of form style*/
 /*social style*/
 .social{
     display: flex;
-    width: 255px;
+    width: 245px;
     list-style: none;
     justify-content: space-between;
     font-family: AvenirNext, sans-serif;
@@ -351,44 +373,52 @@ footer{
 .social-item{
     width: 51px;
     height: 51px;
-    border-radius: 26px;
-    margin: 0 10px 0 0;
+    border-radius: 50%;
+    position: relative;
 }
 .social-item.fb{
     background-color: #2e3092;
-    position: relative;
 }
 .social-item.tw{
     background-color: #00adef;
-    position: relative;
 }
 .social-item.yt{
     background-color: #ed3123;
-    position: relative;
 }
 .social-item.ln{
     background-color: #16198f;
-    position: relative;
 }
-.social-link.fb{
+.social-link {
+    content: '';
+    display: block;
     position: absolute;
-    top: 16px;
-    left: 20px;
-}
-.social-link.tw{
+    width: 100%;
     position: absolute;
-    top: 17.5px;
-    left: 16px;
+    max-width: 40px;
+    max-height: 40px;
+    background-size: 40px 40px;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -20px;
 }
-.social-link.yt{
-    position: absolute;
-    top: 17.5px;
-    left: 15px;
+.social-link:hover{animation: itemAnimation 2s;}
+@keyframes itemAnimation{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
-.social-link.ln{
-    position: absolute;
-    top: 16px;
-    left: 16px;
+.social-item:hover{animation: aBigOne 2s;}
+@keyframes aBigOne{
+    0%{transform: scale(1);}
+    100%{transform: scale(2);}
 }
+
 /*end of social style*/
 /*end of footer style*/
+
+a{display: block;}
+a:hover{animation: aBigOne 5s;}
+@keyframes aBigOne{
+ 0%{transform: scale(1);}
+100%{transform: scale(2);}
+}
