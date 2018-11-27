@@ -185,7 +185,9 @@ body{
 
 /*main-blog*/
 .wrapper{
-    margin-left: 208px;
+    /* margin-left: 208px; */
+    width: 1185px;
+    margin: 0 auto;
     height: 394px;
     display: flex;
 }
