@@ -308,6 +308,17 @@ footer{
     display: flex;
     padding: 70px 60px;
 }
+.hidden{
+    display:none;
+    margin-left: 108px;
+    height: 191px;
+    width: 742px;
+    background: #000;
+    color:#a2ca28;
+    font-size: 2rem;
+    line-height: 191px;
+    box-sizing: border-box;
+    }
 .input{
     border: none;
     border-radius: 2px;
