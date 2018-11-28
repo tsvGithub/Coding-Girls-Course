@@ -320,6 +320,7 @@ footer{
     box-sizing: border-box;
     }
 .input{
+    outline: none;
     border: none;
     border-radius: 2px;
     background-color: #fff;
@@ -348,6 +349,7 @@ footer{
     height: 49px;
     color: #fff;
     border: none;
+    outline: none;
     border-radius: 3px;
     font-size: 15px;
     letter-spacing: -1.2px;
