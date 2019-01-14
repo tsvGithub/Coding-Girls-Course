@@ -118,10 +118,11 @@
     <footer>
         <div class="footer-wrapper">
         <!--form-->
-        <form class="forms" action="">
-            <input class="input name" type="text" placeholder="Your Name">
-            <input class="input email" type="email" placeholder="Your Email">
-            <button class="button">Join Newsletter <img class="rounded-arrow" src="images/yellowgreen-right-arrow.png" alt="arrow"> </button>
+        <div id="hidden" class="hidden">Спасибо, Ваше сообщение отправлено!</div>
+        <form id="form" class="forms" action="">
+            <input id="name" class="input name" type="text" placeholder="Your Name">
+            <input id="email" class="input email" type="email" placeholder="Your Email">
+            <button id="button" class="button" type="submit">Join Newsletter <img class="rounded-arrow" src="images/yellowgreen-right-arrow.png" alt="arrow"> </button>
         </form>
         <!--end of form-->
         <!--social-->
@@ -146,6 +147,9 @@
         </div>
     </footer> 
     <!--end of footer-->
+
+    <script src="script.js"></script>
+
 </body>
 
 
