@@ -35,6 +35,7 @@ body{
     height: 2303px;
 }
 /*Header styles*/
+
 .background-image{
     background-image: url('images/background.jpg');
     height: 891px;
@@ -113,9 +114,11 @@ body{
 .header-slogan-title-yellowgreen{
     color: #a2ca28;
 }
+
 /*End of header styles*/
 
 /*Main page styles*/
+
 .main-page{
     background-color: #a2ca28;
 }
@@ -182,7 +185,6 @@ body{
     padding-left: 10px;
 }
 /*end of main page styles*/
-
 /*main-blog*/
 .wrapper{
     /* margin-left: 208px; */
@@ -291,7 +293,6 @@ body{
     text-align: center;
 }
 /*end of main-blog styles*/
-
 /*footer style*/
 footer{
     background: #000;
@@ -461,9 +462,11 @@ a span{
 /*end of social style*/
 /*end of footer style*/
 
+
 a{display: block;}
 a:hover{animation: aBigOne 5s;}
 @keyframes aBigOne{
  0%{transform: scale(1);}
 100%{transform: scale(2);}
 }
+
